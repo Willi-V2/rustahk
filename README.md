@@ -44,7 +44,6 @@
 - X Sight
 - Quad Dot
 - Hanzo
-- ???
 
 **Settings**
 - Custom text commands

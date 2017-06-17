@@ -1,2 +1,2 @@
 # Rust AHK Script
-Made By WilliV2
+1. Download Autohotkey, from http://autohotkey.com/

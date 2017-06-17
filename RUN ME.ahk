@@ -1,5 +1,5 @@
 ;Script Version
-SVersion = 1.0.2
+SVersion = 1.0.4
 ; Uncomment if Recoil.ahk is not in your standard library
 #Include, Recoil.ahk
 if FileExist("Settings.ini")
@@ -644,7 +644,6 @@ Gui, add, radio, x75 y120 w50 h25 vGapDash gGapDash, Gap Dash
 Gui, add, radio, x75 y145 w50 h25 vRangeFinder gRangeFinder, Range Finder
 Gui, add, radio, x75 y170 w50 h25 vXSite gXSight, X Sight
 Gui, add, radio, x145 y120 w50 h25 vHonzo gHonzo, Honzo
-Gui, add, radio, x145 y145 w50 h25 vWTF gWTF, ???
 
 
 

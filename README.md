@@ -1,0 +1,2 @@
+# rustahk
+Rust AHK Script

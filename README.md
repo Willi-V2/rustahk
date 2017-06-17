@@ -45,3 +45,14 @@
 - Quad Dot
 - Hanzo
 - ???
+
+**Settings**
+- Custom text commands
+- Custom keys for toggling and using text commands
+
+**Config**
+- Custom controlled fire settings
+- Set your Rust sensitivity
+
+**Credits**
+- Just credits...

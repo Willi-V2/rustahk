@@ -27,11 +27,11 @@
 - Simple Sight
 - Holosight
 - 4x Scope
-- Boost
+- Muzzle Boost
 
 
 
-**Screen Centered Reticle System**
+**Screen Centered Crosshair System**
 - _Color Slider_
 - _Reticle On/Off Toggle_
 - Sniper Lines

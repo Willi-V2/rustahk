@@ -23,7 +23,7 @@
 
 
 
-###**Attachment**
+### _Attachment_
 - Simple Sight
 - Holosight
 - 4x Scope

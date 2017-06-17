@@ -6,3 +6,42 @@
 5. Run RUN ME.ahk
 6. Start Rust and join a server
 7. Done, hope you have fun with my AHK script!!
+
+### _Features_
+
+**Weapon Recoil Reduction**
+- Semi-Auto Rifle
+- AK
+- Python
+- Thompson
+- MP5A4
+- Semi-Auto Pistol
+- LR300
+- M249
+- M92
+- SMG
+
+
+
+**Attachment**
+- Simple Sight
+- Holosight
+- 4x Scope
+- Boost
+
+
+
+**Screen Centered Reticle System**
+- _Color Slider_
+- _Reticle On/Off Toggle_
+- Sniper Lines
+- Range Distance Lines
+- Holo Sight
+- Cross
+- Dot
+- V Sight
+- Gap Dash
+- X Sight
+- Quad Dot
+- Hanzo
+- ???

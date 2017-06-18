@@ -1,5 +1,6 @@
 ;Script Version
-SVersion = 1.0.4
+SVersion = 1.0.5
+#SingleInstance, Force
 ; Uncomment if Recoil.ahk is not in your standard library
 #Include, Recoil.ahk
 if FileExist("Settings.ini")
@@ -560,7 +561,7 @@ Gui, Add, Text, % "x0 y-5 w" Width " h30 BackgroundTrans Center 0x200 gGuiMove v
 Gui, -Caption
 Gui, Show, x0 y0 w340 h400, WilliV2 Rust AHK
 gui, +AlwaysOnTop
-Gui, Add, Tab2, x1 y25 w340 h390 , Loadout|Crosshair|Settings|Config|Credits
+Gui, Add, Tab2, x1 y25 w337 h390 , Loadout|Crosshair|Settings|Config|Credits
 Gui, Font, s6 c7BF106
 ;------------------------------------------------------Credits Tab------------------------------------------
 Gui, tab, Credits
@@ -568,13 +569,13 @@ Gui, add, button, x5 y370 w45 h20 gHelp, Help
 Gui, add, button, x60 y370 w45 h20 gClose, Close
 Gui, Font, s6 c7BF106
 Gui, Add, Text, x300 y390 w80 h20, V: %SVersion%
-Gui, Add, Picture, x280 y30 w10 h10 vFRPic10, %a_Workingdir%\Images\FROff.png
-Gui, Add, Picture, x290 y1 vPScript10, %a_Workingdir%\Images\Off.png
+Gui, Add, Picture, x290 y30 w10 h10 vFRPic10, %a_Workingdir%\Images\FROff.png
+Gui, Add, Picture, x300 y1 vPScript10, %a_Workingdir%\Images\Off.png
 Gui, Add, Picture, x145 y115 w50 h50 Center, %a_Workingdir%\Images\wonka.jpg
 Gui, Font, s8 c7BF106
-Gui, add, text, x7 y60 w332 h15 Center, Made By WilliV2
-Gui, add, text, x7 y75 w332 h15 Center, Made for Louie, Zac and WilliV2
-Gui, add, text, x7 y190 w332 h15 Center, Zacs YouTube: 
+Gui, add, text, x7 y60 w320 h15 Center, Made By WilliV2
+Gui, add, text, x7 y75 w320 h15 Center, Made for Louie, Zac and WilliV2
+Gui, add, text, x7 y190 w330 h15 Center, Zacs YouTube: 
 Gui, Font, s8 cRed
 Gui, add, text, x7 y205 w332 h15 Center, youtube.com/user/Physcowolf1000
 Gui, Font, s8 c7BF106
@@ -585,12 +586,12 @@ Gui, Font, s6 c7BF106
 ;------------------------------------------------------Loadout Tab------------------------------------------
 Gui, tab, Loadout
 Gui, Font, s8 c7BF106
-Gui, Add, Text, x5 y70  Center w340 h10, ------------------------------------------------------------------------------------
-Gui, Add, Text, x5 y56  Center w340 h20, Select Weapon
+Gui, Add, Text, x5 y70  Center w330 h10, ------------------------------------------------------------------------------------
+Gui, Add, Text, x5 y56  Center w330 h20, Select Weapon
 Gui, Font, s6 c7BF106
 Gui, Add, Text, x300 y390 w80 h20, V: %SVersion%
-Gui, Add, Picture, x280 y30 w10 h10 vFRPic, %a_Workingdir%\Images\FROff.png
-Gui, Add, Picture, x290 y1 vPScript1, %a_Workingdir%\Images\Off.png
+Gui, Add, Picture, x290 y30 w10 h10 vFRPic, %a_Workingdir%\Images\FROff.png
+Gui, Add, Picture, x300 y1 vPScript1, %a_Workingdir%\Images\Off.png
 Gui, add, radio, x85 y95 w70 h15 vMP5A4, MP5A4
 Gui, add, radio, x5 y95 w70 h15 vSAR, Semi Rifle
 Gui, add, radio, x5 y120 w70 h15 vAK, AK
@@ -602,11 +603,11 @@ Gui, add, radio, x245 y120 w70 h15 vSMG, SMG
 Gui, add, radio, x165 y95 w70 h15 vLR300, LR300
 Gui, add, radio, x165 y120 w70 h15 vM249, M249
 Gui, Font, s8 c7BF106
-Gui, Add, Text, x5 y215  Center w340 h10, -----------------------------------------------------------------------------------
-Gui, Add, Text, x5 y200  Center w340 h20, Select Attachments
+Gui, Add, Text, x5 y215  Center w330 h10, -----------------------------------------------------------------------------------
+Gui, Add, Text, x5 y200  Center w330 h20, Select Attachments
 Gui, add, radio, x500 y180 w70 h15 vSEMI, SEMI
 Gui, add, radio, x500 y210 w70 h15 vAUTO, AUTO
-Gui, Add, Text, x5 y215  Center w340 h10, -----------------------------------------------------------------------------------
+Gui, Add, Text, x5 y215  Center w330 h10, -----------------------------------------------------------------------------------
 Gui, Font, s6 c7BF106
 Gui, add, radio, x5 y235 w70 h17 vNoSight, No Sight
 Gui, add, radio, x85 y235 w70 h17 vSimpleSight, Simple Sight
@@ -627,8 +628,8 @@ Gui, tab, Crosshair
 Gui, add, button, x5 y370 w45 h20 gHelp, Help
 Gui, Add, Text, x300 y390 w80 h20, V: %SVersion%
 Gui, add, button, x60 y370 w45 h20 gClose, Close
-Gui, Add, Picture, x280 y30 w10 h10 vFRPic2, %a_Workingdir%\Images\FROff.png
-Gui, Add, Picture, x290 y1 vPScript2, %a_Workingdir%\Images\Off.png
+Gui, Add, Picture, x290 y30 w10 h10 vFRPic2, %a_Workingdir%\Images\FROff.png
+Gui, Add, Picture, x300 y1 vPScript2, %a_Workingdir%\Images\Off.png
 Gui, add, radio, x5 y75 w35 h15 vSMEKTHairOn gSMEKTHairOn, On
 Gui, add, radio, x40 y75 w35 h15 vSMEKTHairOff gSMEKTHairOff, Off
 Gui, Font, s8 c7BF106
@@ -652,8 +653,8 @@ Gui, tab, Settings
 Gui, add, button, x5 y370 w45 h20 gHelp, Help
 Gui, Add, Text, x300 y390 w80 h20, V: %SVersion%
 Gui, add, button, x60 y370 w45 h20 gClose, Close
-Gui, Add, Picture, x280 y30 w10 h10 vFRPic3, %a_Workingdir%\Images\FROff.png
-Gui, Add, Picture, x290 y1 vPScript3, %a_Workingdir%\Images\Off.png
+Gui, Add, Picture, x290 y30 w10 h10 vFRPic3, %a_Workingdir%\Images\FROff.png
+Gui, Add, Picture, x300 y1 vPScript3, %a_Workingdir%\Images\Off.png
 Gui, Font, s7 c7BF106
 Guicontrol,,Show,1
 Guicontrol,,NoBarrel,1
@@ -754,11 +755,11 @@ Gui, Font, s6 c0000
 Gui, add, button, x5 y370 w45 h20 gHelp, Help
 Gui, add, checkbox, x750 y320 w50 h25 vFROn, FROn
 Gui, add, button, x60 y370 w45 h20 gClose, Close
-Gui, Add, Picture, x280 y30 w10 h10 vFRPic4, %a_Workingdir%\Images\FROff.png
-Gui, Add, Picture, x290 y1 vPScript4, %a_Workingdir%\Images\Off.png
+Gui, Add, Picture, x290 y30 w10 h10 vFRPic4, %a_Workingdir%\Images\FROff.png
+Gui, Add, Picture, x300 y1 vPScript4, %a_Workingdir%\Images\Off.png
 Gui, Font, s7 c7BF106
-Gui, add, text, x7 y60 w332 h15 Center, Controlled Fire Settings
-Gui, add, text, x3 y180 w332 h15 Center, Sensitivity Settings
+Gui, add, text, x7 y60 w330 h15 Center, Controlled Fire Settings
+Gui, add, text, x3 y180 w330 h15 Center, Sensitivity Settings
 Gui, Font, s7 c0000
 Gui, add, edit, x15 y270 w70 h20 vSensitivity, %SENSE% 
 Gui, add, edit, x15 y90 w70 h20 vFireRate, %RoF% 

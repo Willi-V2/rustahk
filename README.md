@@ -12,16 +12,8 @@
 ### _Features_
 
 **Weapon Recoil Reduction**
-- Semi-Auto Rifle
 - AK
-- Python
-- Thompson
-- MP5A4
-- Semi-Auto Pistol
 - LR300
-- M249
-- M92
-- SMG
 
 **Attachment**
 - Simple Sight
@@ -47,3 +39,4 @@
 - Controlled Fire Settings
 - Updates Every Week
 - Community Suggestion Updates
+- Recoil Script (All weapons included except revolver, bolt action and all shotgun)

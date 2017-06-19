@@ -1,4 +1,4 @@
-# Rust AHK Script
+# Rust AHK Script Demo
 1. Download Autohotkey, from http://autohotkey.com
 2. Download WinRar from http://www.rarlab.com/download.htm
 3. Download latest version of my AHK script from https://github.com/Willi-V2/rustahk/releases
@@ -6,7 +6,7 @@
 5. Run RUN ME.ahk
 6. Start Rust and join a server
 7. Done, hope you have fun with my AHK script!!
-
+**Get Full Version:** https://discord.gg/MpahNc8
 ### _Features_
 
 **Weapon Recoil Reduction**
@@ -36,3 +36,12 @@
 
 **Credits**
 - Just credits...
+
+**Full Version Includes**
+- In-Game Overlay Crosshair
+- 7 Custom Text Commands
+- Better GUI
+- Premium Support
+- Controlled Fire Settings
+- Updates Every Week
+- Community Suggestion Updates

@@ -21,33 +21,14 @@
 - M92
 - SMG
 
-
-
 **Attachment**
 - Simple Sight
 - Holosight
 - 4x Scope
-- Muzzle Boost
-
-
-
-**Screen Centered Crosshair System**
-- _Color Slider_
-- _Reticle On/Off Toggle_
-- Sniper Lines
-- Range Distance Lines
-- Holo Sight
-- Cross
-- Dot
-- V Sight
-- Gap Dash
-- X Sight
-- Quad Dot
-- Hanzo
 
 **Settings**
-- Custom text commands
-- Custom keys for toggling and using text commands
+- Custom text command
+- Custom keys for toggling and using text command
 
 **Config**
 - Custom controlled fire settings

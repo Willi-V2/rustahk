@@ -592,16 +592,8 @@ Gui, Font, s6 c7BF106
 Gui, Add, Text, x300 y390 w80 h20, V: %SVersion%
 Gui, Add, Picture, x290 y30 w10 h10 vFRPic, %a_Workingdir%\Images\FROff.png
 Gui, Add, Picture, x300 y1 vPScript1, %a_Workingdir%\Images\Off.png
-Gui, add, radio, x85 y95 w70 h15 vMP5A4, MP5A4
-Gui, add, radio, x5 y95 w70 h15 vSAR, Semi Rifle
-Gui, add, radio, x5 y120 w70 h15 vAK, AK
-Gui, add, radio, x85 y120 w70 h15 vPython, Python
-Gui, add, radio, x85 y145 w70 h15 vSHITSTOL, Semi Pistol
-Gui, add, radio, x5 y145 w70 h15 vThompson, Thompson
-Gui, add, radio, x245 y95 w70 h15 vM92, M92
-Gui, add, radio, x245 y120 w70 h15 vSMG, SMG
-Gui, add, radio, x165 y95 w70 h15 vLR300, LR300
-Gui, add, radio, x165 y120 w70 h15 vM249, M249
+Gui, add, radio, x5 y95 w70 h15 vAK, AK
+Gui, add, radio, x5 y125 w70 h15 vLR300, LR300
 Gui, Font, s8 c7BF106
 Gui, Add, Text, x5 y215  Center w330 h10, -----------------------------------------------------------------------------------
 Gui, Add, Text, x5 y200  Center w330 h20, Select Attachments

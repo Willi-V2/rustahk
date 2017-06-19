@@ -561,7 +561,7 @@ Gui, Add, Text, % "x0 y-5 w" Width " h30 BackgroundTrans Center 0x200 gGuiMove v
 Gui, -Caption
 Gui, Show, x0 y0 w340 h400, WilliV2 Rust AHK
 gui, +AlwaysOnTop
-Gui, Add, Tab2, x1 y25 w337 h390 , Loadout|Crosshair|Settings|Config|Credits
+Gui, Add, Tab2, x1 y25 w337 h390 , Loadout|Settings|Config|Credits
 Gui, Font, s6 c7BF106
 ;------------------------------------------------------Credits Tab------------------------------------------
 Gui, tab, Credits

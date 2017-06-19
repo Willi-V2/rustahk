@@ -708,32 +708,8 @@ Gui, add, Text, x8 y170 w100 h20, CMD1
 Gui, Add, Edit, x55 y170 w100 h20 vCHAT1 cBlack, %CHAT1%
 Gui, Add, Hotkey, vChatKey1 x155 y170 w100 h20,%CHATKEY1%
 
-Gui, add, Text, x8 y190 w100 h20, CMD2
-Gui, Add, Edit, x55 y190 w100 h20 vCHAT2 cBlack, %CHAT2%
-Gui, Add, Hotkey, vChatKey2 x155 y190 w100 h20,%CHATKEY2%
-
-Gui, add, Text, x8 y210 w100 h20, CMD3
-Gui, Add, Edit, x55 y210 w100 h20 vCHAT3 cBlack, %CHAT3%
-Gui, Add, Hotkey, vChatKey3 x155 y210 w100 h20,%CHATKEY3%
-
-Gui, add, Text, x8 y230 w100 h20, CMD4
-Gui, Add, Edit, x55 y230 w100 h20 vCHAT4 cBlack, %CHAT4%
-Gui, Add, Hotkey, vChatKey4 x155 y230 w100 h20,%CHATKEY4%
-
-Gui, add, Text, x8 y250 w100 h20, CMD5
-Gui, Add, Edit, x55 y250 w100 h20 vCHAT5 cBlack, %CHAT5%
-Gui, Add, Hotkey, vChatKey5 x155 y250 w100 h20,%CHATKEY5%
-
-Gui, add, Text, x8 y270 w100 h20, CMD6
-Gui, Add, Edit, x55 y270 w100 h20 vCHAT6 cBlack, %CHAT6%
-Gui, Add, Hotkey, vChatKey6 x155 y270 w100 h20,%CHATKEY6%
-
-Gui, add, Text, x8 y290 w100 h20, CMD7
-Gui, Add, Edit, x55 y290 w100 h20 vCHAT7 cBlack, %CHAT7%
-Gui, Add, Hotkey, vChatKey7 x155 y290 w100 h20,%CHATKEY7%
-
-Gui, add, Text, x8 y310 w150 h20, Controlled Fire Toggle
-Gui, Add, Hotkey, vRoFTOGGLE x155 y310 w100 h20,%RoFTOG%
+Gui, add, Text, x8 y190 w150 h20, Controlled Fire Toggle
+Gui, Add, Hotkey, vRoFTOGGLE x155 y190 w100 h20,%RoFTOG%
 
 Gui, add, button, x115 y370 w45 h20 gSaveSettings, Save
 ;Set Hotkeys

@@ -548,7 +548,6 @@ if FileExist("Guns.ini")
 		IniRead, Y2, Settings.ini, ResCalibration, Y2
 ;-----------------------------------------------------------
 
-Run, "Crosshair.ahk"
 SetWorkingDir %A_ScriptDir%
 Gui +LastFound ;
 WinSet, Transparent, 255
@@ -557,7 +556,7 @@ Gui, Color, 898686
 Gui, Font, s12 c7BF106 Bold
 Gui, Color, 898686
 Gui, Font, s8 c7BF106 Bold
-Gui, Add, Text, % "x0 y-5 w" Width " h30 BackgroundTrans Center 0x200 gGuiMove vCaption", WILLIV2 RUST AHK
+Gui, Add, Text, % "x0 y-5 w" Width " h30 BackgroundTrans Center 0x200 gGuiMove vCaption", WILLIV2 RUST AHK DEMO
 Gui, -Caption
 Gui, Show, x0 y0 w340 h400, WilliV2 Rust AHK
 gui, +AlwaysOnTop
@@ -580,6 +579,7 @@ Gui, Font, s8 cRed
 Gui, add, text, x7 y205 w332 h15 Center, youtube.com/user/Physcowolf1000
 Gui, Font, s8 c7BF106
 Gui, add, text, x7 y220 w332 h15 Center, WilliV2s YouTube: 
+Gui, add, text, x7 y280 w332 h15 Center, Buy Full Version From https://discord.gg/MpahNc8
 Gui, Font, s8 cRed
 Gui, add, text, x7 y235 w332 h15 Center, youtube.com/channel/UCGC_JRAw4qVQwjAK9FRL3jQ
 Gui, Font, s6 c7BF106
@@ -610,12 +610,8 @@ Gui, add, radio, x500 y210 w70 h15 vAUTO, AUTO
 Gui, Add, Text, x5 y215  Center w330 h10, -----------------------------------------------------------------------------------
 Gui, Font, s6 c7BF106
 Gui, add, radio, x5 y235 w70 h17 vNoSight, No Sight
-Gui, add, radio, x85 y235 w70 h17 vSimpleSight, Simple Sight
-Gui, add, radio, x165 y235 w70 h17 vHoloSight, Holosight
-Gui, add, radio, x240 y235 w70 h17 v4xScope, 4x Scope
 Gui, add, button, x5 y370 w45 h20 gHelp, Help
 Gui, add, radio, x5 y265 w70 h17 vNoBarrel, No Barrel Mod
-Gui, add, radio, x85 y265 w70 h17 vMuzzleBoost, Muzzle Boost
 Gui, add, button, x60 y370 w45 h20 gClose, Close
 Gui, add, radio, x380 y45 w70 h20 vHide, Hide
 Gui, add, radio, x380 y25 w70 h20 vShow, Show
@@ -623,28 +619,8 @@ Gui, add, button, x380 y30 w20 h10, Filler
 Gui, add, button, x380 y30 w20 h10, Filler
 Gui, add, radio, x380 y65 w70 h25 vMod, Mod
 Gui, add, radio, x380 y25 w70 h25 vOff, Off
-;------------------------------------------------------Crosshair Tab------------------------------------------
-Gui, tab, Crosshair
-Gui, add, button, x5 y370 w45 h20 gHelp, Help
-Gui, Add, Text, x300 y390 w80 h20, V: %SVersion%
-Gui, add, button, x60 y370 w45 h20 gClose, Close
-Gui, Add, Picture, x290 y30 w10 h10 vFRPic2, %a_Workingdir%\Images\FROff.png
-Gui, Add, Picture, x300 y1 vPScript2, %a_Workingdir%\Images\Off.png
-Gui, add, radio, x5 y75 w35 h15 vSMEKTHairOn gSMEKTHairOn, On
-Gui, add, radio, x40 y75 w35 h15 vSMEKTHairOff gSMEKTHairOff, Off
-Gui, Font, s8 c7BF106
-Gui, Add, Text, x3 y60  Center w334 h15, Crosshair Editor
-Gui, Font, s6 c7BF106
-Gui, add, radio, x5 y95 w50 h25 vSniper gSniper, Sniper
-Gui, add, radio, x5 y120 w50 h25 vACOG gACOG, ACOG
-Gui, add, radio, x5 y145 w50 h25 vCross gCross, Cross
-Gui, add, radio, x5 y170 w50 h25 vDot gDot, Dot
-Gui, add, radio, x145 y95 w50 h25 vQuad gQuad, Quad Dot
-Gui, add, radio, x75 y95 w50 h25 vVSight gVSight, V Sight
-Gui, add, radio, x75 y120 w50 h25 vGapDash gGapDash, Gap Dash
-Gui, add, radio, x75 y145 w50 h25 vRangeFinder gRangeFinder, Range Finder
-Gui, add, radio, x75 y170 w50 h25 vXSite gXSight, X Sight
-Gui, add, radio, x145 y120 w50 h25 vHonzo gHonzo, Honzo
+
+
 
 
 
@@ -1368,13 +1344,7 @@ MinMaxKey:
 }
 	Return
 
-ColorSliderSubmit:
-	sleep, 50
-;-----------Translates the RGB from sliders to ARGB number, 255 is Transparency------------
-	RGB:= Gdip_ToARGB(255, CSRed, CSGreen, CSBlue)
-	IniWrite, %RGB%, Settings.ini, ColorSets, CrosshairCOLOR
-	Run, "Crosshair.ahk"
-Return
+
 
 ;---------Toggles the recoil script on and off
 ToggleKey:
@@ -1402,62 +1372,7 @@ ToggleKey:
 Return
 
 
-;-----Saves last selected screen Crosshair to settings.ini
-Quad:
-IniWrite, Quad.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
 
-
-Sniper:
-IniWrite, SNIPER.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-ACOG:
-IniWrite, ACOG.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-Cross:
-IniWrite, CROSS.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-Dot:
-IniWrite, DOT.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-VSight:
-IniWrite, VSIGHT.png, Settings.ini, SightSelected, CURRENTSIGHT
-	sleep, 50
-		Run, "Crosshair.ahk"
-Return
-
-GapDash:
-IniWrite, GAPDASH.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-RangeFinder:
-IniWrite, RANGEFINDER.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-XSight:
-IniWrite, XSIGHT.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-Honzo:
-IniWrite, Honzo.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
-
-WTF:
-IniWrite, WTF.png, Settings.ini, SightSelected, CURRENTSIGHT
-		Run, "Crosshair.ahk"
-Return
 
 ;//////////////////////////Save Settings//////////////////////
 SaveSettings:
@@ -1466,18 +1381,6 @@ SaveSettings:
 	IniWrite, %KILLKEY%, Settings.ini, ChatHotKeys, KILLHOTKEY
 	IniWrite, %CHAT1%, Settings.ini, ChatCommands, CHATCOMMAND1
 	IniWrite, %CHATKEY1%, Settings.ini, ChatHotKeys, CHATHOTKEY1
-	IniWrite, %CHAT2%, Settings.ini, ChatCommands, CHATCOMMAND2
-	IniWrite, %CHATKEY2%, Settings.ini, ChatHotKeys, CHATHOTKEY2
-	IniWrite, %CHAT3%, Settings.ini, ChatCommands, CHATCOMMAND3
-	IniWrite, %CHATKEY3%, Settings.ini, ChatHotKeys, CHATHOTKEY3
-	IniWrite, %CHAT4%, Settings.ini, ChatCommands, CHATCOMMAND4
-	IniWrite, %CHATKEY4%, Settings.ini, ChatHotKeys, CHATHOTKEY4
-	IniWrite, %CHAT5%, Settings.ini, ChatCommands, CHATCOMMAND5
-	IniWrite, %CHATKEY5%, Settings.ini, ChatHotKeys, CHATHOTKEY5
-	IniWrite, %CHAT6%, Settings.ini, ChatCommands, CHATCOMMAND6
-	IniWrite, %CHATKEY6%, Settings.ini, ChatHotKeys, CHATHOTKEY6
-	IniWrite, %CHAT7%, Settings.ini, ChatCommands, CHATCOMMAND7
-	IniWrite, %CHATKEY7%, Settings.ini, ChatHotKeys, CHATHOTKEY7
 	IniWrite, %RoFTOGGLE%, Settings.ini, ChatHotKeys, RoFTOGGLE
 	MsgBox, 0,, Settings Saved
 ;----Reload Script to Update Hotkeys----
@@ -1732,12 +1635,6 @@ Loop{
 	}
 return
 
-SMEKTHairOn:
-	Run, "Crosshair.ahk"
-return
-SMEKTHairOff:
-	CloseScript("Crosshair.ahk")
-return
 
 
 ;------------------FUNCTIONS-------------------------------

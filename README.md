@@ -7,7 +7,7 @@
 6. Start Rust and join a server
 7. Done, hope you have fun with my AHK script!!
 
-**Get Full Version:** https://discord.gg/MpahNc8
+**Get Full Version:** http://www.rustscript.tk/
 
 ### _Features_
 
